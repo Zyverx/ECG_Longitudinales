@@ -1,0 +1,4 @@
+ECGPCG0003 2 8000 240000
+ECGPCG0003.dat 16 110554.8863(10634)/mV 0 0 10148 -14265 0 ECG
+ECGPCG0003.dat 16 54162.0791(5104)/mV 0 0 2089 6207 0 PCG
+# The simultaneous electrocardiogram and phonocardiogram database

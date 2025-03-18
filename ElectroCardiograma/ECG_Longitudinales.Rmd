@@ -266,7 +266,7 @@ ggplot(ECG_data%>%filter(Time<=60),
              aes(x = Time, y = ECG), 
              color = "red", 
              size = 2) +  # Outliers en rojo
-  labs(title = "Señal ECG con Outliers detectados (IQR)", 
+  labs(title = "Señal ECG con Outliers detectados (Z Score)", 
        x = "Tiempo (s)", 
        y = "Amplitud (mV)") +
   theme_minimal()
@@ -296,7 +296,9 @@ ggplot(ECG_data%>%filter(Time<=60),
              aes(x = Time, y = ECG), 
              color = "red", 
              size = 1) +  # Outliers en rojo
-  labs(title = "Señal ECG con Outliers detectados (IQR)", x = "Tiempo (s)", y = "Amplitud (mV)") +
+  labs(title = "Señal ECG con Outliers detectados (Percentil)", 
+       x = "Tiempo (s)", 
+       y = "Amplitud (mV)") +
   theme_minimal()
 
 
